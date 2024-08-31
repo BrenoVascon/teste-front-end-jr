@@ -1,0 +1,126 @@
+.sliderWrapper
+  position: relative
+  max-width: 1200px
+  margin: 0 auto
+  padding: 20px 0
+
+.menu
+  max-width: 1265px
+  max-height: 40px
+  display: flex
+  justify-content: space-between
+  border: 1px solid #e0e0e0
+  margin-bottom: 20px
+  font-family: var(--font-poppins)
+  font-weight: 400
+
+.menuItem
+  flex: 1
+  padding: 10px 20px
+  text-align: center
+  cursor: pointer
+  font-size: 16px
+  color: #3B3B3B
+  border-right: 1px solid #e0e0e0
+
+  &:last-child
+    border-right: none
+
+  &:hover
+    background-color: #f5f5f5
+
+.active
+  color: #F71963
+  font-weight: bold
+
+.sliderContainer
+  position: relative
+  overflow: hidden 
+
+.productCard
+  background-color: #fff
+  border-radius: 10px
+  padding: 15px
+  text-align: center
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+  transition: transform 0.2s, box-shadow 0.2s
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  width: 270px
+  height: 500px
+  margin: 0 10px
+
+  &:hover
+    transform: translateY(-5px)
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2)
+
+.productImage
+  width: 100%
+  height: auto
+  margin-bottom: 15px
+
+.productName
+  font-size: 16px
+  color: #333
+  font-weight: bold
+  margin-bottom: 10px
+  text-align: left
+
+.oldPrice
+  font-size: 14px
+  color: #999
+  text-decoration: line-through
+  margin-bottom: 5px
+  text-align: left
+
+.newPrice
+  font-size: 20px
+  color: #F71963
+  font-weight: bold
+  margin-bottom: 10px
+  text-align: left
+
+.installments
+  font-size: 14px
+  color: #333
+  margin-bottom: 15px
+  text-align: left
+
+.freeShipping
+  font-size: 14px
+  color: #F71963
+  margin-bottom: 15px
+  text-align: left
+
+.buyButton
+  background-color: #F71963
+  color: #fff
+  padding: 10px 20px
+  border: none
+  border-radius: 5px
+  cursor: pointer
+  font-size: 16px
+
+  &:hover
+    background-color: #d61e54
+
+.swiperButtonPrev, .swiperButtonNext
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  width: 40px
+  height: 40px
+  color: #fff
+  border-radius: 50%
+  z-index: 1000
+  cursor: pointer
+  display: flex
+  align-items: center
+  justify-content: center
+
+.swiperButtonPrev
+  left: -50px 
+
+.swiperButtonNext
+  right: -50px 
