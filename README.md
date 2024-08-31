@@ -30,22 +30,32 @@ Também é recomendado utilizar um editor de código como o Visual Studio Code.
 
    Faça um fork deste projeto e, em seguida, clone-o para a sua máquina local usando o Git:
 
-   ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   ```
+   git clone git@github.com:BrenoVascon/teste-front-end-jr.git
+   ```
 
-2. ## Navegue até o diretório do projeto:
+2. **Navegue até o diretório do projeto:**
+   ```
    cd nome-do-repositorio
+   ```
 
 
-3. ## Instale as dependências:
+3. **Instale as dependências:**
+   ```
    npm install
+   ```
+   *O projeto estará rodando em http://localhost:5173.*
    
-   "O projeto estará rodando em http://localhost:5173."
+   
 
-
-5. ## Inicie o servidor de desenvolvimento:
+4. **Inicie o servidor de desenvolvimento:**
+    ```
    npm run dev
+    ```
 
 
-5. ## 📦 Para criar uma build de produção: 
-npm run build
+
+5. **📦 Para criar uma build de produção:**
+   ```
+   npm run build
+   ```
