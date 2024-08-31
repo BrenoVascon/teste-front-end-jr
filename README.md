@@ -1,6 +1,6 @@
 # Teste Econverse: Vaga Desenvolvedor Front-End Jr
 
-### Vem ser #Econverse!
+### Como Instalar o Projeto!!!
 
 Segue abaixo as instruções para a execução do teste.
 
