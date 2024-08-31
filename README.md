@@ -24,13 +24,14 @@ Antes de começar, você precisa ter as seguintes ferramentas instaladas:
 
 Também é recomendado utilizar um editor de código como o Visual Studio Code.
 
-## Passos para rodar o projeto
+### Passos para rodar o projeto
 
+1. **Clone o repositório:**
 
-# Clone o repositório:
-```bash
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   Faça um fork deste projeto e, em seguida, clone-o para a sua máquina local usando o Git:
 
+   ```bash
+   git clone https://github.com/seu-usuario/nome-do-repositorio.git
 
 # Navegue até o diretório do projeto:
 cd nome-do-repositorio
@@ -45,6 +46,6 @@ cd nome-do-repositorio
 npm run dev
 
 
-📦 Build para Produção
+# 📦 Build para Produção
 # Para criar uma build de produção: 
 npm run build
