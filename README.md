@@ -33,19 +33,19 @@ Também é recomendado utilizar um editor de código como o Visual Studio Code.
    ```bash
    git clone https://github.com/seu-usuario/nome-do-repositorio.git
 
-# Navegue até o diretório do projeto:
+## Navegue até o diretório do projeto:
 cd nome-do-repositorio
 
-# Instale as dependências:
 
+## Instale as dependências:
    npm install
+   
+### O projeto estará rodando em http://localhost:5173.
 
-# O projeto estará rodando em http://localhost:5173.
 
-# Inicie o servidor de desenvolvimento:
+## Inicie o servidor de desenvolvimento:
 npm run dev
 
 
-# 📦 Build para Produção
-# Para criar uma build de produção: 
+## 📦 Para criar uma build de produção: 
 npm run build
