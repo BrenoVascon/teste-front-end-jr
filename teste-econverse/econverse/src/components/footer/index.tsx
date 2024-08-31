@@ -16,6 +16,7 @@ import ticketIcon from '../../assets/images/footer/ticket.svg';
 import sodexoIcon from '../../assets/images/footer/sodexo.svg';
 import econverseLogo from '../../assets/images/footer/econverse.svg';
 import vtexLogo from '../../assets/images/footer/vtexFooter.svg';
+import aleloIcon from '../../assets/images/footer/alelo.svg';
 
 export default function Footer() {
   return (
@@ -72,6 +73,12 @@ export default function Footer() {
             <img
               src={eloIcon}
               alt="Elo"
+              width={40}
+              height={25}
+            />
+             <img
+              src={aleloIcon}
+              alt="alelo"
               width={40}
               height={25}
             />
@@ -134,7 +141,8 @@ export default function Footer() {
         </div>
       </div>
       <div className={styles.footerBottom}>
-        <p>COPYRIGHT © 2019, TODOS OS DIREITOS RESERVADOS.</p>
+        <p>Copyright © 2019. Todos os direitos reservados. Todas as marcas e suas imagens são de propriedade de seus respectivos donos.<br></br>
+        É vedada a reprodução, total ou parcial, de qualquer conteúdo sem expressa autorização.</p>
         <div className={styles.partnerLogos}>
           <img
             src={econverseLogo}

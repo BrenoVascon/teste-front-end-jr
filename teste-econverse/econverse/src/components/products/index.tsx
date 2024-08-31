@@ -4,10 +4,11 @@ import { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import styles from './produtos.module.sass';
+import styles from './products.module.sass';
 import { Navigation } from 'swiper/modules';
-import LeftArrow from '../../assets/images/arrow-left.svg'
-import RightArrow from '../../assets/images/arrow-right.svg'
+import LeftArrow from '../../assets/images/arrow-left.svg';
+import RightArrow from '../../assets/images/arrow-right.svg';
+import Modal from '../modal/index';
 
 interface Product {
   productName: string;
@@ -19,6 +20,8 @@ interface Product {
 export default function Products() {
   const [products, setProducts] = useState<Product[]>([]);
   const [activeCategory, setActiveCategory] = useState('CELULAR');
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
   useEffect(() => {
     fetch('/api/teste-front-end/junior/tecnologia/lista-produtos/produtos.json')
@@ -40,6 +43,16 @@ export default function Products() {
   }, []);
 
   const categories = ['CELULAR', 'ACESSÓRIOS', 'TABLETS', 'NOTEBOOKS', 'TVS', 'VER TODOS'];
+
+  const handleBuyClick = (product: Product) => {
+    setSelectedProduct(product);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedProduct(null);
+  };
 
   return (
     <div className={styles.sliderWrapper}>
@@ -93,14 +106,28 @@ export default function Products() {
                 <p className={styles.newPrice}>R$ {product.price.toFixed(2)}</p>
                 <p className={styles.installments}>ou 2x de R$ {(product.price / 2).toFixed(2)} sem juros</p>
                 <p className={styles.freeShipping}>Frete grátis</p>
-                <button className={styles.buyButton}>Comprar</button>
+                <button
+                  className={styles.buyButton}
+                  onClick={() => handleBuyClick(product)} // Abre o modal com o produto selecionado
+                >
+                  Comprar
+                </button>
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
-      <div className={styles.swiperButtonPrev}><img src={LeftArrow} width={40} height={40} alt='Arrow Left'/></div>
-      <div className={styles.swiperButtonNext}><img src={RightArrow} width={40} height={40} alt='Arrow Right'/></div>
+      <div className={styles.swiperButtonPrev}><img src={LeftArrow} width={40} height={40} alt='Arrow Left' /></div>
+      <div className={styles.swiperButtonNext}><img src={RightArrow} width={40} height={40} alt='Arrow Right' /></div>
+
+      {/* Modal */}
+      {selectedProduct && (
+        <Modal
+          isOpen={isModalOpen}
+          onClose={handleCloseModal}
+          product={selectedProduct}
+        />
+      )}
     </div>
   );
 }

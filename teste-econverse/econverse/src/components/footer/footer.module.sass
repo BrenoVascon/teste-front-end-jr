@@ -2,11 +2,13 @@
   background-color: #2c2c2c
   color: #fff
   padding: 40px 0
-  max-width: 1442px
-  margin: 0 auto 0 auto // Centraliza o footer horizontalmente
+  width: 100%
+  margin: 0 auto 0 auto
+  padding-left: 20px
+  padding-right: 20px
 
 .container
-  max-width: 1266px
+  width: 100%
   margin: 0 auto
   display: flex
   justify-content: space-between
@@ -20,6 +22,7 @@
     font-size: 16px
     font-weight: bold
     margin-bottom: 15px
+    color: #FFFFFF
 
   ul
     list-style: none
@@ -28,8 +31,9 @@
 
     li
       margin-bottom: 10px
-      font-size: 14px
+      font-size: 12px
       color: #e1e1e1
+      font-weight: light
 
   .socialMedia
     display: flex
@@ -41,38 +45,51 @@
   flex-wrap: wrap
   gap: 10px
   margin-top: 10px
+  justify-content: center
+
+.paymentMethods img
+  height: 19px
+  max-width: 100%
+  flex: 1 0 calc(30% - 10px) // 30% de largura com menos espaço entre eles
+  margin-bottom: 10px
+  margin-right: 5px // ou ajuste para outro valor conforme necessário
+
+
 
 .newsletter
-  flex: 1.5
+  flex: 1
   padding: 0 20px
-  background-color: #333
+  background-color: #FFFFFF
   border-radius: 10px
   padding: 20px
   text-align: left
 
   h4
     font-size: 18px
-    font-weight: bold
+    font-weight: 100
     margin-bottom: 10px
+    color: #3F3F40
 
     strong
       font-weight: bold
-      color: #fff
+      color: #3F3F40
+      font-size: 22px
 
   p
-    font-size: 14px
+    font-size: 12px
     margin-bottom: 20px
-    color: #b3b3b3
+    color: #3F3F40
+    text-align: center
 
   .subscribe
     display: flex
     width: 100%
+    gap: 20px
 
     input
-      flex: 1
       padding: 10px
-      border: none
-      border-radius: 5px 0 0 5px
+      border: 0.5
+      border-radius: 5px
       font-size: 14px
       background-color: #fff
 
@@ -81,19 +98,19 @@
       border: none
       background-color: #F71963
       color: #fff
-      border-radius: 0 5px 5px 0
+      border-radius: 5px
       cursor: pointer
       font-weight: bold
       text-transform: uppercase
       font-size: 14px
 
 .footerBottom
-  background-color: #1a1a1a
   padding: 10px 0
   margin-top: 40px
   display: flex
   justify-content: space-between
   align-items: center
+  border-top: 1px solid #e1e1e1
 
   p
     font-size: 12px
@@ -101,4 +118,4 @@
 
   .partnerLogos
     display: flex
-    gap: 20px
+    gap: 30px

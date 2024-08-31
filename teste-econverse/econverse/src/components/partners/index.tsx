@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './parceiros.module.sass'
+import styles from './partnes.module.sass'
 import ParceirosPhoto from '../../assets/images/parceiros.svg'
 
 

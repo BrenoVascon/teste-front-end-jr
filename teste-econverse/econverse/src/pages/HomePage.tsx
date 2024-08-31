@@ -3,9 +3,9 @@ import Header from "../components/header";
 import Hero from "../components/hero";
 import Categories from "../components/categories";
 import SectionTitle from "../components/title";
-import ProductSlider from "../components/produtos";
+import ProductSlider from "../components/products";
 import styles from "../app.module.sass";
-import Parceiros from "../components/parceiros";
+import Partners from "../components/partners";
 import Footer from "../components/footer";
 import Brands from "../components/brands";
 
@@ -18,12 +18,12 @@ const HomePage: React.FC = () => {
       <Categories />
       <SectionTitle>Produtos relacionados</SectionTitle>
       <ProductSlider />
-      <Parceiros />
+      <Partners />
       <div className={styles.products}>
         <SectionTitle viewAllText="Ver todos">
           Produtos relacionados
         </SectionTitle>
-        <Parceiros />
+        <Partners />
         <div className={styles.products}>
         <SectionTitle>Navegue por marcas</SectionTitle>
       </div>
