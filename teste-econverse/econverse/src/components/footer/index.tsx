@@ -23,7 +23,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.section}>
-          <h4>Sobre nós</h4>
+          <h4 className={styles.about}>Sobre nós</h4>
           <ul>
             <li>CONHEÇA</li>
             <li>COMO COMPRAR</li>
@@ -51,7 +51,7 @@ export default function Footer() {
           </div>
         </div>
         <div className={styles.section}>
-          <h4>INFORMAÇÕES ÚTEIS</h4>
+          <h4 className={styles.informations}>INFORMAÇÕES ÚTEIS</h4>
           <ul>
             <li>FALE CONOSCO</li>
             <li>DÚVIDAS</li>
