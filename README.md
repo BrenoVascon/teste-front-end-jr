@@ -1,4 +1,4 @@
-# Teste Econverse: Vaga Desenvolvedor Front-End Jr
+# Teste Econverse: Vaga de Estágio Desenvolvedor Front-End 
 
 # Projeto Econverse - Vitrine de Produtos
 
