@@ -24,29 +24,38 @@ Antes de começar, você precisa ter as seguintes ferramentas instaladas:
 
 Também é recomendado utilizar um editor de código como o Visual Studio Code.
 
-## Passos para rodar o projeto
+### Passos para rodar o projeto
 
-```bash
-# Clone o repositório:
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
+1. **Clone o repositório:**
 
-```bash
-# Navegue até o diretório do projeto:
-cd nome-do-repositorio
+   Faça um fork deste projeto e, em seguida, clone-o para a sua máquina local usando o Git:
 
-```bash
-# Instale as dependências:
-npm install
+   ```
+   git clone git@github.com:BrenoVascon/teste-front-end-jr.git
+   ```
 
-## O projeto estará rodando em http://localhost:5173.
-
-```bash
-# Inicie o servidor de desenvolvimento:
-npm run dev
+2. **Navegue até o diretório do projeto:**
+   ```
+   cd nome-do-repositorio
+   ```
 
 
-📦 Build para Produção
-```bash
-Copiar código
-# Para criar uma build de produção:
-npm run build
+3. **Instale as dependências:**
+   ```
+   npm install
+   ```
+   *O projeto estará rodando em http://localhost:5173.*
+   
+   
+
+4. **Inicie o servidor de desenvolvimento:**
+    ```
+   npm run dev
+    ```
+
+
+
+5. **📦 Para criar uma build de produção:**
+   ```
+   npm run build
+   ```
