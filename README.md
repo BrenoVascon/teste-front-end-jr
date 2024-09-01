@@ -44,15 +44,13 @@ Também é recomendado utilizar um editor de código como o Visual Studio Code.
    ```
    npm install
    ```
-   *O projeto estará rodando em http://localhost:5173.*
-   
    
 
 4. **Inicie o servidor de desenvolvimento:**
     ```
    npm run dev
     ```
-
+ *O projeto estará rodando em http://localhost:5173.*
 
 
 5. **📦 Para criar uma build de produção:**
