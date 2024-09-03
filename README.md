@@ -36,7 +36,7 @@ Também é recomendado utilizar um editor de código como o Visual Studio Code.
 
 2. **Navegue até o diretório do projeto:**
    ```
-   cd nome-do-repositorio
+   cd .\teste-front-end-jr\
    ```
 
 
